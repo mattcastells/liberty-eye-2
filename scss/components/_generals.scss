@@ -18,3 +18,28 @@ h2 {
   font-weight: bold;
   color: $accent-color;
 }
+
+#header__background {
+  background-color: $background-color;
+  height: 103px;
+  border-bottom: 2px solid $accent-color;
+  margin: auto;
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+
+#footer__background {
+  background-color: $background-color;
+  height: 103px;
+  border-top: 2px solid $accent-color;
+  margin: auto;
+  width: 100vw;
+}
+
+.background__2 {
+  width: 100vw;
+  height: 1260px;
+  background-color: $secondary-background-color;
+}

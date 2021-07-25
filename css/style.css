@@ -8,7 +8,7 @@
 }
 
 html {
-  background: #1b263b;
+  background: #191919;
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -25,7 +25,33 @@ p {
 h2 {
   font-size: 2em;
   font-weight: bold;
-  color: #ef233c;
+  color: #eb5e28;
+}
+
+#header__background {
+  background-color: #191919;
+  height: 103px;
+  border-bottom: 2px solid #eb5e28;
+  margin: auto;
+  margin-top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+
+#footer__background {
+  background-color: #191919;
+  height: 103px;
+  border-top: 2px solid #eb5e28;
+  margin: auto;
+  width: 100vw;
+}
+
+.background__2 {
+  width: 100vw;
+  height: 1260px;
+  background-color: #ccc5b9;
 }
 
 #nav__bar {
@@ -48,8 +74,8 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #1b263b;
-  border-bottom: 2px solid #ef233c;
+  background-color: #191919;
+  border-bottom: 2px solid #eb5e28;
 }
 
 #nav__bar #header__logos {
@@ -76,7 +102,7 @@ h2 {
 }
 
 #nav__bar #header__logos #header__h1:hover {
-  color: #ef233c;
+  color: #eb5e28;
 }
 
 #nav__bar #header__list {
@@ -105,14 +131,13 @@ h2 {
 }
 
 #nav__bar #header__list .nav__link:hover {
-  color: #ef233c;
+  color: #eb5e28;
 }
 
 #intro__section {
-  max-width: 1220px;
   margin: auto;
   margin-top: 40px;
-  width: 100vw;
+  width: 1220px;
 }
 
 #intro__section #intro__container {
@@ -139,34 +164,31 @@ h2 {
       align-content: flex-start;
   text-align: center;
   height: 760px;
-  max-width: 1220px;
+  max-width: 100%;
 }
 
 #intro__section #intro__container #intro__text {
   width: 40%;
   margin-bottom: 40px;
   margin-right: 100px;
-  text-shadow: 0.04em 0 #1b263b, 0 0.04em #1b263b, -0.04em 0 #1b263b, 0 -0.04em #1b263b;
+  text-shadow: 0.04em 0 #191919, 0 0.04em #191919, -0.04em 0 #191919, 0 -0.04em #191919;
   line-height: 40px;
   font-weight: bold;
   font-size: 2em;
 }
 
 #flex__section {
-  padding: 58px 122px 122px 122px;
+  padding: 58px 122px 58px 122px;
+  max-width: 1220px;
   margin: auto;
   margin-top: 40px;
-  background: #e0e1dd;
+  background: #ccc5b9;
 }
 
 #flex__section #flex__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -181,12 +203,6 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
   max-width: 1160px;
 }
 
@@ -218,8 +234,9 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(36, 62, 206, 0.6);
+  background: rgba(233, 120, 28, 0.6);
   color: #fff;
+  font-style: bold;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s, visibility 0.2s;
@@ -230,6 +247,7 @@ h2 {
   visibility: visible;
   opacity: 1;
   font-size: 1.5em;
+  font-style: bold;
 }
 
 #flex__section #flex__container .img__wrap:hover .img__description_layer .img__description {
@@ -261,9 +279,9 @@ footer #footer__container {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: auto;
-  margin-top: 30px;
   height: 100%;
-  width: 50%;
+  width: 100%;
+  max-width: 660px;
 }
 
 footer #footer__container .footer__logos {
@@ -284,7 +302,7 @@ footer #footer__container .footer__logos::before {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ffee10;
+  background: #eb5e28;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scale(0.9);
@@ -295,19 +313,19 @@ footer #footer__container .footer__logos::before {
 footer #footer__container .footer__logos::before:hover::before {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-box-shadow: 0 0 20px #ffee10;
-          box-shadow: 0 0 20px #ffee10;
+  -webkit-box-shadow: 0 0 20px #eb5e28;
+          box-shadow: 0 0 20px #eb5e28;
 }
 
 footer #footer__container .footer__logos:hover {
-  color: #ffee10;
-  -webkit-box-shadow: 0 0 10px #ffee10;
-          box-shadow: 0 0 10px #ffee10;
-  text-shadow: 0 0 10px #ffee10;
+  color: #eb5e28;
+  -webkit-box-shadow: 0 0 10px #eb5e28;
+          box-shadow: 0 0 10px #eb5e28;
+  text-shadow: 0 0 10px #eb5e28;
 }
 
 body {
-  max-width: 1220px;
   margin: auto auto;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */

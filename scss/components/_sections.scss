@@ -1,10 +1,9 @@
 // Index
 
 #intro__section {
-  max-width: $desktop-width;
   margin: auto;
   margin-top: 40px;
-  width: 100vw;
+  width: 1220px;
 
   #intro__container {
     background-image: url(../../images/slider/slider1.jpg);
@@ -20,7 +19,7 @@
     align-content: flex-start;
     text-align: center;
     height: 760px;
-    max-width: 1220px;
+    max-width: 100%;
 
     #intro__text {
       width: 40%;
@@ -37,14 +36,13 @@
 }
 
 #flex__section {
-  padding: 58px 122px 122px 122px;
+  padding: 58px 122px 58px 122px;
+  max-width: 1220px;
   margin: auto;
   margin-top: 40px;
   background: $secondary-background-color;
   #flex__title {
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: center;
     font-style: italic;
     height: 60px;
@@ -53,9 +51,6 @@
   #flex__container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    text-align: center;
     max-width: 1160px;
     .img__wrap {
       position: relative;
@@ -76,8 +71,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(36, 62, 206, 0.6);
+        background: rgba(233, 120, 28, 0.6);
         color: #fff;
+        font-style: bold;
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.2s, visibility 0.2s;
@@ -86,6 +82,7 @@
         visibility: visible;
         opacity: 1;
         font-size: 1.5em;
+        font-style: bold;
         .img__description {
           transition: 0.2s;
           transform: translateY(1em);

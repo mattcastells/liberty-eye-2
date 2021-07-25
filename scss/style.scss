@@ -7,6 +7,6 @@
 @import "./components/footer";
 
 body {
-  max-width: $desktop-width;
   margin: auto auto;
+  overflow-x: hidden;
 }
