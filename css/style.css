@@ -8,7 +8,7 @@
 }
 
 html {
-  background: #191919;
+  background: #1c2329;
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -29,7 +29,7 @@ h2 {
 }
 
 #header__background {
-  background-color: #191919;
+  background-color: #1c2329;
   height: 103px;
   border-bottom: 2px solid #eb5e28;
   margin: auto;
@@ -41,7 +41,7 @@ h2 {
 }
 
 #footer__background {
-  background-color: #191919;
+  background-color: #1c2329;
   height: 103px;
   border-top: 2px solid #eb5e28;
   margin: auto;
@@ -50,8 +50,9 @@ h2 {
 
 .background__2 {
   width: 100vw;
-  height: 1260px;
+  height: 1245px;
   background-color: #ccc5b9;
+  border-top: solid 2px #eb5e28;
 }
 
 #nav__bar {
@@ -74,8 +75,7 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #191919;
-  border-bottom: 2px solid #eb5e28;
+  background-color: #1c2329;
 }
 
 #nav__bar #header__logos {
@@ -137,7 +137,7 @@ h2 {
 #intro__section {
   margin: auto;
   margin-top: 40px;
-  width: 1220px;
+  margin-bottom: 40px;
 }
 
 #intro__section #intro__container {
@@ -145,6 +145,9 @@ h2 {
   background-position: top center;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 1%;
+  -webkit-box-shadow: 0 0 15px #eb5e28;
+          box-shadow: 0 0 15px #eb5e28;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,14 +167,17 @@ h2 {
       align-content: flex-start;
   text-align: center;
   height: 760px;
-  max-width: 100%;
+  max-width: 1507px;
+  margin: auto;
 }
 
 #intro__section #intro__container #intro__text {
-  width: 40%;
+  width: 602px;
+  height: 240px;
+  max-width: 602px;
   margin-bottom: 40px;
-  margin-right: 100px;
-  text-shadow: 0.04em 0 #191919, 0 0.04em #191919, -0.04em 0 #191919, 0 -0.04em #191919;
+  margin-right: 200px;
+  text-shadow: 0.04em 0 #1c2329, 0 0.04em #1c2329, -0.04em 0 #1c2329, 0 -0.04em #1c2329;
   line-height: 40px;
   font-weight: bold;
   font-size: 2em;
@@ -181,7 +187,6 @@ h2 {
   padding: 58px 122px 58px 122px;
   max-width: 1220px;
   margin: auto;
-  margin-top: 40px;
   background: #ccc5b9;
 }
 

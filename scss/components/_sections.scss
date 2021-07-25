@@ -3,13 +3,15 @@
 #intro__section {
   margin: auto;
   margin-top: 40px;
-  width: 1220px;
+  margin-bottom: 40px;
 
   #intro__container {
     background-image: url(../../images/slider/slider1.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 1%;
+    box-shadow: 0 0 15px $accent-color;
 
     display: flex;
     flex-direction: column;
@@ -19,12 +21,15 @@
     align-content: flex-start;
     text-align: center;
     height: 760px;
-    max-width: 100%;
+    max-width: 1507px;
+    margin: auto;
 
     #intro__text {
-      width: 40%;
+      width: 602px;
+      height: 240px;
+      max-width: 602px;
       margin-bottom: 40px;
-      margin-right: 100px;
+      margin-right: 200px;
       text-shadow: 0.04em 0 $background-color, 0 0.04em $background-color,
         -0.04em 0 $background-color, 0 -0.04em $background-color;
 
@@ -39,7 +44,6 @@
   padding: 58px 122px 58px 122px;
   max-width: 1220px;
   margin: auto;
-  margin-top: 40px;
   background: $secondary-background-color;
   #flex__title {
     display: flex;
