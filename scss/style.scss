@@ -1,0 +1,12 @@
+@import "./components/resets";
+@import "./components/variables";
+@import "./components/generals";
+
+@import "./components/nav-bar";
+@import "./components/sections";
+@import "./components/footer";
+
+body {
+  max-width: $desktop-width;
+  margin: auto auto;
+}
