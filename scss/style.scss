@@ -5,10 +5,18 @@
 @import "./components/nav-bar";
 @import "./components/index-sections";
 @import "./components/about-sections";
+@import "./components/contactanos-sections";
+@import "./components/containers";
 @import "./components/footer";
 
 body {
   margin: auto auto;
   overflow-x: hidden;
   background-color: $background-color;
+}
+
+.secondary__body {
+  margin: auto auto;
+  overflow-x: hidden;
+  background-color: $secondary-background-color;
 }

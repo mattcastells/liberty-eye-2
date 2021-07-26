@@ -432,6 +432,89 @@ h2 {
   }
 }
 
+.content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 1220px;
+  height: auto;
+  margin: auto;
+  padding: 40px;
+}
+
+.content__container .content__photo {
+  max-width: 40%;
+  height: auto;
+  -webkit-box-shadow: 0 0 15px #eb5e28;
+          box-shadow: 0 0 15px #eb5e28;
+}
+
+.content__container .content__text {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  max-width: 40%;
+}
+
+.content__container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 1220px;
+  height: auto;
+  margin: auto;
+  padding: 40px;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.content__container2 .content__photo2 {
+  max-width: 40%;
+  height: auto;
+  -webkit-box-shadow: 0 0 15px #eb5e28;
+          box-shadow: 0 0 15px #eb5e28;
+  -webkit-box-shadow: 0 0 15px #000f1a;
+          box-shadow: 0 0 15px #000f1a;
+}
+
+.content__container2 .content__text2 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  max-width: 40%;
+  color: black;
+}
+
 footer {
   max-width: 1220px;
   height: 100px;
@@ -504,5 +587,11 @@ body {
   margin: auto auto;
   overflow-x: hidden;
   background-color: #000f1a;
+}
+
+.secondary__body {
+  margin: auto auto;
+  overflow-x: hidden;
+  background-color: #ccc5b9;
 }
 /*# sourceMappingURL=style.css.map */
