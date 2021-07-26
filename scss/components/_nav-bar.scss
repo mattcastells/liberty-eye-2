@@ -6,7 +6,7 @@
   width: $desktop-width;
   margin: auto;
   margin-top: 0;
-  padding-top: 15px;
+  padding-top: 10px;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -47,6 +47,43 @@
       &:hover {
         color: $accent-color;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nav__bar {
+    display: block;
+    position: relative;
+    max-width: 320px;
+    #header__logos {
+      display: none;
+    }
+    #header__list {
+      flex-direction: column;
+      max-width: 320px;
+      margin-bottom: 35px;
+      border-bottom: 2px solid $accent-color;
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: $background-color;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #99201c;
+  background-image: linear-gradient(316deg, #99201c 0%, #f56545 74%);
+
+  .dropdown-menu {
+    background-color: $accent-color;
+    .dropdown-item {
+      background-color: $accent-color;
     }
   }
 }

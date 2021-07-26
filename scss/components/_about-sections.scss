@@ -1,0 +1,100 @@
+.about-us__section {
+  margin-top: 75px;
+  padding: 5px;
+  .about-us__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+    margin: auto;
+    max-width: 1220px;
+    max-height: 1220px;
+
+    .about-us__photo {
+      width: 40%;
+      height: auto;
+      border-radius: 5%;
+    }
+    .about-us__text {
+      max-width: 40%;
+      line-height: 30px;
+      span {
+        color: $accent-color;
+        font-weight: bold;
+      }
+    }
+  }
+  .about-us__container2 {
+    @extend .about-us__container;
+    flex-direction: row-reverse;
+  }
+  .about-us__container3 {
+    @extend .about-us__container;
+    margin-bottom: 60px;
+  }
+
+  .hover08 .about-us__photo {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .hover08:hover .about-us__photo {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+// Media for Cellphone
+
+@media (max-width: 320px) {
+  .about-us__section {
+    margin-top: 30px;
+    max-width: 320px;
+    .about-us__container {
+      flex-direction: column;
+      max-width: 320px;
+      .about-us__photo {
+        width: 80%;
+        border-radius: 5%;
+      }
+      .about-us__text {
+        max-width: 80%;
+        margin-top: 20px;
+      }
+    }
+  }
+  .hover08 .about-us__photo {
+    filter: none;
+  }
+  .hover08:hover .about-us__photo {
+    filter: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__section {
+    margin-top: 30px;
+    max-width: 768px;
+    .about-us__container {
+      flex-direction: column;
+      max-width: 768px;
+      margin: 0;
+      .about-us__photo {
+        border-radius: 5%;
+      }
+      .about-us__text {
+        max-width: 768px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .hover08 .about-us__photo {
+    filter: none;
+  }
+  .hover08:hover .about-us__photo {
+    filter: none;
+  }
+}

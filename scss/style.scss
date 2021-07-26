@@ -3,10 +3,12 @@
 @import "./components/generals";
 
 @import "./components/nav-bar";
-@import "./components/sections";
+@import "./components/index-sections";
+@import "./components/about-sections";
 @import "./components/footer";
 
 body {
   margin: auto auto;
   overflow-x: hidden;
+  background-color: $background-color;
 }
