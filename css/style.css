@@ -304,6 +304,10 @@ h2 {
           transform: translateY(1em);
 }
 
+#flex__section #flex__container .img__wrap:hover .img__description_layer .video__link {
+  text-decoration: none;
+}
+
 #flex__section #flex__container .img__wrap:hover .img__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -581,6 +585,26 @@ footer #footer__container .footer__logos:hover {
   footer {
     max-width: 320px;
   }
+}
+
+.carousel-item {
+  margin: 50px 0px 100px 0px;
+}
+
+.d-block {
+  max-width: 1220px;
+  max-height: 800px;
+  margin: auto;
+  -webkit-box-shadow: 0 0 15px #eb5e28;
+          box-shadow: 0 0 15px #eb5e28;
+}
+
+.w-100 {
+  max-width: 1220px;
+  max-height: 800px;
+  margin: auto;
+  -webkit-box-shadow: 0 0 15px #eb5e28;
+          box-shadow: 0 0 15px #eb5e28;
 }
 
 body {

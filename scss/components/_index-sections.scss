@@ -20,6 +20,7 @@
     align-items: center;
     align-content: flex-start;
     text-align: center;
+
     height: 760px;
     max-width: 1507px;
     margin: auto;
@@ -90,6 +91,9 @@
         .img__description {
           transition: 0.2s;
           transform: translateY(1em);
+        }
+        .video__link {
+          text-decoration: none;
         }
       }
       &:hover .img__description {
