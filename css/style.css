@@ -157,23 +157,59 @@ h2 {
 
 .dropdown-menu {
   background-color: #000f1a;
+  border: 1px solid #000f1a;
 }
 
 .dropdown-item {
   color: white;
+  font-weight: bold;
 }
 
 .btn-secondary {
-  background-color: #99201c;
-  background-image: linear-gradient(316deg, #99201c 0%, #f56545 74%);
+  background-color: #000f1a;
+  border: 1px solid #000f1a;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  color: #eb5e28;
+  background-color: #000f1a;
+  border: 1px solid #000f1a;
 }
 
 .btn-secondary .dropdown-menu {
   background-color: #eb5e28;
+  border: 1px solid #000f1a;
 }
 
 .btn-secondary .dropdown-menu .dropdown-item {
   background-color: #eb5e28;
+  border: 1px solid #000f1a;
+}
+
+.btn-secondary:active {
+  color: #fff;
+  background-color: #000f1a;
+  border-color: #000f1a;
+}
+
+.btn-check:active + .btn-secondary,
+.btn-check:checked + .btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #000f1a;
+  border-color: #000f1a;
+  color: #eb5e28;
+}
+
+.btn-check:active + .btn-secondary:focus,
+.btn-check:checked + .btn-secondary:focus,
+.btn-secondary.active:focus,
+.btn-secondary:active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
 }
 
 #intro__section {
@@ -459,20 +495,39 @@ h2 {
   padding: 40px;
 }
 
+.content__container a {
+  display: contents;
+}
+
 .content__container .content__photo {
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   -webkit-box-shadow: 0 0 15px #eb5e28;
           box-shadow: 0 0 15px #eb5e28;
 }
 
 .content__container .content__text {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1em;
   max-width: 40%;
+}
+
+.content__container .content__text .content__title {
+  text-decoration: underline;
+  font-weight: bold;
+  display: inline;
+}
+
+.content__container .content__text .content__p {
+  display: inline;
+  color: black;
+  margin-bottom: 0;
 }
 
 .content__container2 {
@@ -500,8 +555,12 @@ h2 {
       flex-direction: row-reverse;
 }
 
+.content__container2 a {
+  display: contents;
+}
+
 .content__container2 .content__photo2 {
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   -webkit-box-shadow: 0 0 15px #eb5e28;
           box-shadow: 0 0 15px #eb5e28;
@@ -510,12 +569,30 @@ h2 {
 }
 
 .content__container2 .content__text2 {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1em;
   max-width: 40%;
+}
+
+.content__container2 .content__text2 .content__title {
+  text-decoration: underline;
+  font-weight: bold;
+  display: inline;
+}
+
+.content__container2 .content__text2 .content__p {
+  display: inline;
+  color: black;
+  margin-bottom: 0;
+}
+
+.content__container2 .content__text2 p {
   color: black;
 }
 
@@ -605,6 +682,136 @@ footer #footer__container .footer__logos:hover {
   margin: auto;
   -webkit-box-shadow: 0 0 15px #eb5e28;
           box-shadow: 0 0 15px #eb5e28;
+}
+
+#background__body {
+  margin: auto auto;
+  overflow-x: hidden;
+  background-image: linear-gradient(115deg, rgba(82, 82, 117, 0.8), rgba(89, 89, 110, 0.7)), url(../../images/photos/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  height: auto;
+  width: 100%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  max-width: 1220px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+form .form__label, form #form__location, form #form__news {
+  padding: 15px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+form .form__label .input__bar, form #form__location .input__bar, form #form__news .input__bar {
+  width: 50%;
+}
+
+form #form__text {
+  width: 80%;
+  height: 150px;
+  margin-left: 61px;
+  margin-bottom: 20px;
+}
+
+form #form__location #form__countries {
+  margin-left: 5px;
+  width: 150px;
+}
+
+form #form__news .form__check {
+  margin-left: 10px;
+  width: 20px;
+  height: auto;
+}
+
+form #form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
+
+form #form__buttons .btn__enviar {
+  display: block;
+  margin-top: 60px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 20%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+form #form__buttons .btn__enviar:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+form #form__buttons .btn__borrar {
+  display: block;
+  margin-top: 60px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 20%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+  background-color: #42378f;
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+}
+
+form #form__buttons .btn__borrar:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 body {

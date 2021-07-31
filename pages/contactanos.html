@@ -18,8 +18,7 @@
         rel="stylesheet">
 </head>
 
-<body>
-
+<body id="background__body">
     <div id="header__background">
         <nav id="nav__bar">
             <div id="header__logos">
@@ -46,6 +45,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Redes
                     </a>
+
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="https://www.instagram.com/liberty.eye/?hl=es-la">Instagram</a>
                         <a class=" dropdown-item"
@@ -58,28 +58,50 @@
         </nav>
     </div>
 
+    <form id="form">
+
+
+        <label class="form__label" id="form__name" for="name">Nombre: <input class="input__bar" type="text"
+                name="name"></label>
+
+        <label class="form__label" for="email">E-Mail: <input class="input__bar" type="email" name="email"
+                required=""></label>
+
+        <textarea id="form__text" name=""></textarea>
+
+        <!-- Seleccion de pais de origen -->
+
+        <div id="form__location">
+            <label for="paises">¿De donde sos?:</label>
+            <select name="paises" id="form__countries">
+                <option value="sel" selected="">Seleccione...</option>
+                <option value="ARG">Argentina</option>
+                <option value="CHI">Chile</option>
+                <option value="URU">Uruguay</option>
+                <option value="URU">Paraguay</option>
+                <option value="BRZ">Brazil</option>
+                <option value="OTR">Otro</option>
+            </select>
+        </div>
+
+        <!-- Checkbox sobre informacion a recibir -->
+
+
+        <label id="form__news" for="check">¿Queres recibir noticias sobre nuestros lanzamientos?
+            <input class="form__check" type="checkbox" name="no-acepta" value="2"></label>
+
+
+        <div id="form__buttons">
+            <!-- Boton de enviar/resetear -->
+            <input class="form__button btn btn__enviar" type="submit" value="Enviar">
+            <input class="form__button btn btn__borrar" type="reset" value="Borrar">
+        </div>
 
 
 
+    </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
 
 
     <footer>

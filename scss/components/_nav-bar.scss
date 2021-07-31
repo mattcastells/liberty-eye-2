@@ -70,20 +70,54 @@
 
 .dropdown-menu {
   background-color: $background-color;
+  border: 1px solid $background-color;
 }
 
 .dropdown-item {
   color: white;
+  font-weight: bold;
 }
 
 .btn-secondary {
-  background-color: #99201c;
-  background-image: linear-gradient(316deg, #99201c 0%, #f56545 74%);
+  background-color: $background-color;
+  border: 1px solid $background-color;
+  font-weight: bold;
+  &:hover {
+    color: $accent-color;
+    background-color: $background-color;
+    border: 1px solid $background-color;
+  }
 
   .dropdown-menu {
     background-color: $accent-color;
+    border: 1px solid $background-color;
     .dropdown-item {
       background-color: $accent-color;
+      border: 1px solid $background-color;
     }
   }
+}
+
+.btn-secondary:active {
+  color: #fff;
+  background-color: $background-color;
+  border-color: $background-color;
+}
+
+.btn-check:active + .btn-secondary,
+.btn-check:checked + .btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: $background-color;
+  border-color: $background-color;
+  color: $accent-color;
+}
+
+.btn-check:active + .btn-secondary:focus,
+.btn-check:checked + .btn-secondary:focus,
+.btn-secondary.active:focus,
+.btn-secondary:active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0;
 }
