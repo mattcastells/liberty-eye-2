@@ -275,9 +275,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-style: italic;
   height: 60px;
   margin-bottom: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  font-style: bold;
 }
 
 #flex__section #flex__container {
@@ -566,6 +568,7 @@ h2 {
           box-shadow: 0 0 15px #eb5e28;
   -webkit-box-shadow: 0 0 15px #000f1a;
           box-shadow: 0 0 15px #000f1a;
+  height: auto;
 }
 
 .content__container2 .content__text2 {
