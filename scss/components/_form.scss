@@ -34,7 +34,7 @@ form {
   .form__label {
     padding: 15px;
     margin-left: 30px;
-    width: 100%;
+    width: 95%;
     .input__bar {
       width: 50%;
     }
@@ -106,6 +106,28 @@ form {
       background-color: #42378f;
       background-color: #f7b42c;
       background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    #form__text {
+      margin-left: 30px;
+    }
+
+    #form__buttons {
+      margin-right: 0px;
+
+      .btn__enviar {
+        font-size: 15px;
+        padding: 0px;
+      }
+
+      .btn__borrar {
+        font-size: 15px;
+        padding: 0px;
+      }
     }
   }
 }

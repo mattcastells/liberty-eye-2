@@ -1,5 +1,9 @@
 // Index
 
+#responsive__intro__image {
+  display: none;
+}
+
 #intro__section {
   margin: auto;
   padding: 40px 0px;
@@ -103,5 +107,110 @@
         transform: translateY(0);
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #carouselExampleIndicators {
+    display: none;
+  }
+  #flex__section {
+    max-width: 100%;
+    padding: 0;
+    flex-direction: column;
+    #flex__title {
+      width: 100%;
+      margin: auto;
+      height: 30px;
+      font-size: 20px;
+      margin-top: 60px;
+    }
+    #flex__container {
+      max-width: 80%;
+      margin: auto;
+      flex-direction: column;
+
+      .img__wrap {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .flex__photo {
+          width: 100%;
+          max-width: 700px;
+          height: auto;
+        }
+        .img__description_layer {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  #carouselExampleIndicators {
+    display: none;
+  }
+  #flex__section {
+    max-width: 100%;
+    padding: 0;
+    flex-direction: column;
+    #flex__title {
+      width: 100%;
+      margin: auto;
+      height: 30px;
+      font-size: 20px;
+      margin-top: 60px;
+    }
+    #flex__container {
+      max-width: 80%;
+      margin: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      .img__wrap {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .flex__photo {
+          width: 100%;
+          max-width: 700px;
+          height: auto;
+        }
+        .img__description_layer {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #responsive__intro__image {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+
+    #responsive__intro {
+      max-width: 100%;
+      margin-bottom: 25px;
+      margin-top: 35px;
+      border-radius: 1%;
+      box-shadow: 0 0 5px $accent-color;
+    }
+  }
+  #carouselExampleIndicators {
+    display: none;
   }
 }
